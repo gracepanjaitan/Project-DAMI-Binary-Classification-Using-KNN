@@ -1,0 +1,4 @@
+flask
+gunicorn
+scikit-learn
+feature-engine==0.3.0
