@@ -214,10 +214,6 @@ cursor: pointer;
         <br/>
           <legend>Patient Information</legend>
           <div class="item">
-            <label for="visit_id"> ID Visit<span>*</span></label>
-            <input id="visit_id" type="number" name="visit_id" required/>
-          </div>
-          <div class="item">
             <label for="kdkc">Kode Wilayah Kantor Cabang BPJS Kesehatan<span>*</span></label>
             <input id="kdkc" type="number" name="kdkc" required/>
           </div>
@@ -233,7 +229,11 @@ cursor: pointer;
                     <label for="proc39_45">Nomor Prosedur proc39_45<span>*</span></label>
                     <input id="proc39_45" type="number" name="proc39_45" required/>
                     </div>
-            <div class="item">
+              <div class="item">
+                <label for="dx2_p00_p96">Nomor Prosedur dx2_p00_p96<span>*</span></label>
+                <input id="dx2_p00_p96" type="number" name="dx2_p00_p96" required/>
+                </div>
+        <div class="item">
              <p>Apakah kode rumah sakit merupakan tipe SC?</p>
             <select name="typeppk_SC" >
              <option value="1" >Ya</option>
@@ -248,8 +248,8 @@ cursor: pointer;
            </select>
          </div>
          <div class="item">
-            <p>Apakah kode rumah sakit merupakan tipe KJ?</p>
-           <select name="typeppk_KJ">
+            <p>Apakah kode rumah sakit merupakan tipe C?</p>
+           <select name="typeppk_C">
             <option value="1">Ya</option>
              <option value="0">Tidak</option>
            </select>

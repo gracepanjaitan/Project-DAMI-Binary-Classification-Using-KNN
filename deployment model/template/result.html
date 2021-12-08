@@ -215,14 +215,10 @@ cursor: pointer;
         <fieldset>
           <legend>Patient Information</legend>
           {% if (finalData) == 1 %}
-         <h3 style="background-color: #174e8d; color: #fff; text-align: center;">PREDICTION RESULT: FRAUD</h3>
+         <h3 style="background-color:  red ; color: #fff; text-align: center;">PREDICTION RESULT: FRAUD</h3>
          {% else %}
-         <h3 style="background-color: red;  color: #fff; text-align: center;">PREDICTION RESULT: NOT FRAUD</h3>
+         <h3 style="background-color: #174e8d;  color: #fff; text-align: center;">PREDICTION RESULT: NOT FRAUD</h3>
          {% endif %}
-          <div class="item">
-            <label for="visit_id"> ID Visit<span>*</span></label>
-            <input id="visit_id" type="number" name="visit_id" placeholder="{{ visit_id }}" disabled/>
-          </div>
           <div class="item">
             <label for="kdkc">Kode Wilayah Kantor Cabang BPJS Kesehatan<span>*</span></label>
             <input id="kdkc" type="number" name="kdkc" placeholder="{{ kdkc }}" disabled/>
@@ -239,6 +235,10 @@ cursor: pointer;
                     <label for="proc39_45">Nomor Prosedur proc39_45<span>*</span></label>
                     <input id="proc39_45" type="number" name="proc39_45" placeholder="{{ proc39_45 }}" disabled/>
                     </div>
+            <div class="item">
+                      <label for="dx2_p00_p96">Nomor Prosedur dx2_p00_p96<span>*</span></label>
+                      <input id="dx2_p00_p96" type="number" name="dx2_p00_p96" placeholder="{{ dx2_p00_p96 }}" disabled/>
+                      </div>
             <div class="item">
              <p>Apakah kode rumah sakit merupakan tipe SC?</p>
             {% if (typeppk_SC) == 1 %}
@@ -268,16 +268,16 @@ cursor: pointer;
             {% endif %}
          </div>
          <div class="item">
-            <p>Apakah kode rumah sakit merupakan tipe KJ?</p>
-           {% if (typeppk_KJ) == 1 %}
+            <p>Apakah kode rumah sakit merupakan tipe C?</p>
+           {% if (typeppk_C) == 1 %}
            <select disabled>
-            <option value="1" name="typeppk_KJ" >Ya</option>
-             <option value="0" name="typeppk_KJ">Tidak</option>
+            <option value="1" name="typeppk_C" >Ya</option>
+             <option value="0" name="typeppk_C">Tidak</option>
            </select>
            {% else %}
             <select disabled>
-              <option value="1" name="typeppk_KJ" >Ya</option>
-               <option value="0" name="typeppk_KJ" selected>Tidak</option>
+              <option value="1" name="typeppk_C" >Ya</option>
+               <option value="0" name="typeppk_C" selected>Tidak</option>
              </select>
            {% endif %}
          </div>
